@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscrição - Etapa 1: Dados Pessoais</title>
+    <!-- Liga este HTML ao arquivo de estilo visual (CSS) -->
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+
+    <!-- O 'action' diz para onde os dados vão quando clicar no botão. O 'method="GET"' passa os dados para a próxima página -->
+    <form id="formInscricao" action="./formulario - Copia.html" method="GET">
+            <form id="formInscricao" action="./formulario - Copia(2).html" method="GET">
+        
+        <!-- CABEÇALHO COM OS DADOS DO COLÉGIO -->
+        <center>
+            <h2>COLÉGIO ESTADUAL LEONARDO DA VINCI</h2>
+            <p>Ensino Fundamental, Médio, Normal e Profissional</p>
+            <p>Av. Salgado Filho, 175 - Centro Sul | Fone: (46) 3536-2334</p>
+            <p>e-mail: dvzleonardodavinci@seed.pr.gov.br | CEP 85.660-000</p>
+            <p><b>DOIS VIZINHOS - PARANÁ</b></p>
+        </center>
+        <hr>
+        
+        <!-- SEÇÃO I - CAMPOS DA FICHA DE INSCRIÇÃO -->
+        <h3>I - FICHA DE INSCRIÇÃO</h3>
+        
+        <!-- O atributo 'required' obriga o usuário a preencher o campo antes de avançar -->
+        <p>
+            <label for="nome">Nome do Aluno:</label><br>
+            <input type="text" id="nome" name="nome" value="" required>
+        </p>
+
+        <p>
+            <label for="rg">RG:</label><br>
+            <input type="text" id="rg" name="rg" value="" required>
+        </p>
+        
+        <p>
+            <label for="expedido">Expedido por:</label><br>
+            <input type="text" id="expedido" name="expedido" value="" required>
+        </p>
+        
+        <p>
+            <label for="cpf">CPF:</label><br>
+            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" value="" required>
+        </p>
+
+        <p>
+            <label for="nascimento">Data de Nascimento:</label><br>
+            <input type="date" id="nascimento" name="nascimento" value="" required>
+        </p>
+        
+        <p>
+            <label for="endereco">Endereço:</label><br>
+            <input type="text" id="endereco" name="endereco" value="" required>
+        </p>
+        
+        <p>
+            <label for="numero">Nº:</label><br>
+            <input type="text" id="numero" name="numero" value="" required>
+        </p>
+
+        <p>
+            <label for="bairro">Bairro:</label><br>
+            <input type="text" id="bairro" name="bairro" value="" required>
+        </p>
+        
+        <!-- O atributo 'readonly' deixa a caixa cinza/travada, impedindo a digitação -->
+        <p>
+            <label for="municipio">Município:</label><br>
+            <input type="text" id="municipio" name="municipio" value="Dois Vizinhos" readonly style="background-color: #e2e8f0; color: #64748b; cursor: not-allowed;">
+        </p>
+        
+        <p>
+            <label for="uf">UF:</label><br>
+            <input type="text" id="uf" name="uf" value="PR" readonly style="background-color: #e2e8f0; color: #64748b; cursor: not-allowed;">
+        </p>
+
+        <p>
+            <label for="telFixo">Telefone Fixo:</label><br>
+            <input type="tel" id="telFixo" name="telFixo" value="">
+        </p>
+        
+        <p>
+            <label for="celA">Celular A:</label><br>
+            <input type="tel" id="celA" name="celA" value="" required>
+        </p>
+        
+        <p>
+            <label for="celB">Celular B:</label><br>
+            <input type="tel" id="celB" name="celB" value="">
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" value="" required>
+        </p>
+
+        <!-- SELEÇÃO DE CURSOS (Apenas um pode ser escolhido por vez usando o tipo 'radio') -->
+        <h4>CURSO PRETENDIDO:</h4>
+        <p>
+            <input type="radio" name="curso" id="curso1" value="Técnico em Desenvolvimento de Sistemas" required> 
+            <label for="curso1">Técnico em Desenvolvimento de Sistemas (Integrado ao Ensino Médio) – Turno da Manhã</label>
+            <br><br>
+            <input type="radio" name="curso" id="curso2" value="Formação de Docentes" required> 
+            <label for="curso2">Formação de Docentes (Integrado ao Ensino Médio) – Turno da Manhã</label>
+        </p>
+
+        <!-- CAIXA DE TEXTO LEGAL / DECLARAÇÃO -->
+        <p class="declaracao">
+            Declaro verdadeiras as informações acima e estar ciente que, em caso de classificação para o curso e efetivação de matrícula, o não comparecimento nas aulas nos primeiros (05) cinco dias úteis do início do curso implicará na exclusão automática da matrícula sendo necessário participar de novo processo seletivo para ingresso no curso pretendido.
+        </p>
+
+        <p>
+            <label for="responsavel">Nome do(a) Responsável:</label><br>
+            <input type="text" id="responsavel" name="responsavel" value="" required>
+        </p>
+        
+        <p>
+            <label for="assinaturaResp">Assinatura digital do Responsável:</label><br>
+            <input type="text" id="assinaturaResp" name="assinaturaResp" placeholder="Digite o nome completo para assinar" required>
+        </p>
+        
+        <br><br>
+        <center>
+            <!-- Botão do tipo 'submit' que ativa o formulário e envia o usuário para a página do action -->
+            <input type="submit" value="Avançar para Ficha de Pontuação">
+        </center>
+    </form>
+
+</body>
+</html>
